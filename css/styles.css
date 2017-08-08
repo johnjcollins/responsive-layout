@@ -1,3 +1,7 @@
+/* ===============================
+  Base Element Styles
+=============================== */
+
 * {
   box-sizing: border-box;
 }
@@ -6,4 +10,198 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   color: #3a3a3a;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+p {
+  font-size: 0.95em;
+  margin: 0;
+  padding-bottom: 1.8em;
+}
+
+h2 {
+  font-size: .9em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#skills h2 {
+  color: #005FA8;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.wrapper {
+  border-top: 1px solid #ccc;
+}
+
+.name {
+  font-size: 1.75em;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#footer-name {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+#backtop {
+  float: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.intro img {
+  max-width: 70%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+a:hover {
+  color: #afafaf;
+}
+
+#portfolio {
+  background-color: #fff;
+}
+
+#skills {
+  background-color: #cbf3ff;
+}
+
+.main-nav a {
+  font-weight: 700;
+  display: block;
+  padding: 10px 15px;
+  background-color: #fff;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+#contact {
+  padding-bottom: 2em;
+}
+
+#contact p {
+  color: #8e8e8e;
+}
+
+#contact .container p:nth-child(3) {
+  padding-bottom: 0.5em;
+}
+
+#contact a,
+#contact a:hover {
+  font-weight: 700;
+}
+
+#contact span {
+  padding-right: 10px;
+}
+
+footer {
+  padding-bottom: 15px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* ===============================
+  Base Layout Styles
+=============================== */
+
+
+
+/* ===============================
+  Media Queries
+=============================== */
+
+@media (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+    padding: 5px 25px;
+  }
+
+  .main-nav a {
+    background-color: #f2f2f2;
+  }
+
+  .intro {
+    margin: 50px 0;
+  }
+
+  .intro img {
+    float: right;
+    padding-left: 15px;
+    margin: 0;
+  }
+
+  .intro p {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .project {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+  }
+
+  .project:nth-child(even) {
+    margin-right: 4%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .project {
+    width: 30%;
+  }
+
+  .project:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .project:nth-child(3n+2) {
+    margin-right: 5%;
+  }
+
+  .project:nth-child(3n+3) {
+    margin-right: 5%;
+  }
+
 }
