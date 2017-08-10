@@ -28,22 +28,9 @@ h2 {
   margin: 0;
 }
 
-#skills h2 {
-  color: #005FA8;
-}
-
 h3 {
   font-size: 1.2em;
   font-weight: 400;
-}
-
-.container {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.wrapper {
-  border-top: 1px solid #ccc;
 }
 
 .name {
@@ -52,20 +39,12 @@ h3 {
   padding: 20px 0;
 }
 
-#footer-name {
-  float: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.footer-nav {
-  display: none;
-}
-
-#backtop {
-  float: right;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.main-nav a {
+  font-weight: 700;
+  display: block;
+  padding: 10px 15px;
+  background-color: #fff;
+  margin-top: 5px;
   text-transform: uppercase;
 }
 
@@ -92,19 +71,6 @@ a:hover {
   background-color: #fff;
 }
 
-#skills {
-  background-color: #cbf3ff;
-}
-
-.main-nav a {
-  font-weight: 700;
-  display: block;
-  padding: 10px 15px;
-  background-color: #fff;
-  margin-top: 5px;
-  text-transform: uppercase;
-}
-
 #contact {
   padding-bottom: 2em;
 }
@@ -126,10 +92,48 @@ a:hover {
   padding-right: 10px;
 }
 
+#skills {
+  background-color: #cbf3ff;
+}
+
+#skills h2 {
+  color: #005FA8;
+}
+
 footer {
   padding-bottom: 15px;
   font-size: 0.8em;
   font-weight: 700;
+}
+
+#footer-name {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-nav {
+  display: none;
+}
+
+#backtop {
+  float: right;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* ===============================
+  Base Layout Styles
+=============================== */
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.wrapper {
+  border-top: 1px solid #ccc;
 }
 
 .clearfix::after {
@@ -139,17 +143,19 @@ footer {
 }
 
 
-/* ===============================
-  Base Layout Styles
-=============================== */
-
-
 
 /* ===============================
   Media Queries
 =============================== */
 
 @media (min-width: 768px) {
+
+
+  .container {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
   .main-nav li {
     display: inline-block;
     padding: 5px 25px;
@@ -184,9 +190,52 @@ footer {
     margin-right: 4%;
   }
 
+  #backtop {
+    display: none;
+  }
+
+  .footer-nav {
+    float: right;
+  }
+
+  .footer-nav,
+  .footer-nav ul,
+  .footer-nav li {
+    display: inline-block;
+  }
+
+  .footer-nav li {
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+
 }
 
 @media (min-width: 1024px) {
+
+  .container {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 30px 0 0 20px;
+  }
 
   .project {
     width: 30%;
